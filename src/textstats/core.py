@@ -1,5 +1,7 @@
 def word_count(text: str) -> int:
     """Number of whitespace-separated tokens in `text`."""
+    if text == "":
+        return 0
     split_text = text.split(" ")
     return len(split_text)
 
